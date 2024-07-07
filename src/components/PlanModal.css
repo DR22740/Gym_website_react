@@ -1,0 +1,99 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .modal-content {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    width: 80%;
+    max-width: 600px;
+    animation: slideIn 0.5s ease-in;
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .plan {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  .plan.best-offer {
+    background-color: #e50000;
+  }
+  
+  .plan h2 {
+    color: #fff;
+  }
+  
+  .plan p {
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .plan ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .plan ul li {
+    margin: 10px 0;
+  }
+  
+  .plan button {
+    background-color: #e50000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .plan button:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+  }
+  
+  .close-button {
+    background-color: #e50000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .close-button:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+  }
+  

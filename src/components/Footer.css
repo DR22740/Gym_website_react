@@ -1,0 +1,45 @@
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInFooter 1s ease-out forwards;
+  }
+  
+  @keyframes slideInFooter {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-media {
+    margin-bottom: 20px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.2);
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  

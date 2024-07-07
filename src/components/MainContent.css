@@ -1,0 +1,152 @@
+.main-content {
+  text-align: center;
+  color: #fff;
+  background: url('D:\react-project-folder\src\components\creative_red_arrows_black_metal_background_4k_hd_abstract-3840x2160.jpg') no-repeat center center/cover;
+  padding: 50px 20px;
+}
+
+.intro {
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  background-color: #e50000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #ff3333;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.form-section {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.form-section button {
+  background-color: #e50000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background-color: #ff3333;
+}
+
+.gym-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.why-choose-us, .our-team {
+  margin: 50px 0;
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.why-choose-us.visible, .our-team.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.why-choose-us h2, .our-team h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.reasons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.reason {
+  background-color: #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.reason h3 {
+  color: #e50000;
+  margin-bottom: 10px;
+}
+
+.reason p {
+  color: #fff;
+}
+
+.our-team p {
+  margin-bottom: 30px;
+}
+
+.trainers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.trainer {
+  background-color: #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 30%;
+}
+
+.trainer-photo {
+  background-color: #555;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.trainer-name, .trainer-role, .trainer-rating {
+  margin: 5px 0;
+}
+
+.trainer-name {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.trainer-role {
+  color: #ccc;
+}
+
+.trainer-rating {
+  color: #ffd700;
+}
