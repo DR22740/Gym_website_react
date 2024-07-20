@@ -1,0 +1,191 @@
+.packages-page {
+    padding: 40px;
+    background: url('https://static.vecteezy.com/system/resources/previews/011/438/130/non_2x/abstract-gold-arrow-direction-on-dark-grey-metallic-circle-mesh-design-modern-luxury-futuristic-background-vector.jpg') no-repeat center center/cover;
+    color: #fff;
+  }
+  
+  .packages-page h1, 
+  .packages-page p {
+    text-align: center;
+  }
+  
+  .packages {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+  
+  .package {
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent background for readability */
+    border: 1px solid #e50000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .package h2 {
+    color: #ff3333;
+    text-align: center;
+  }
+  
+  .package ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .package ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .package ul li::before {
+    content: '✔';
+    color: #ff3333;
+    margin-right: 10px;
+  }
+  
+  .package button {
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .package button:hover {
+    background-color: #ff3333;
+  }
+  
+  .comparison-table {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .comparison-table:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .comparison-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .comparison-table th {
+    background-color: #e50000;
+  }
+  
+  .comparison-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .testimonials,
+  .faqs,
+  .contact-info-big {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonials:hover,
+  .faqs:hover,
+  .contact-info-big:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .testimonials h2,
+  .faqs h2,
+  .contact-info-big h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial,
+  .faq,
+  .contact-info-big form {
+    margin-bottom: 20px;
+  }
+  
+  .testimonial p {
+
+    margin: 10px 0;
+  }
+  
+  .testimonial span {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  .faq h3 {
+    margin-top: 10px;
+  }
+  
+  .contact-info-big form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-info-big label {
+    margin-bottom: 5px;
+  }
+  
+  .contact-info-big input,
+  .contact-info-big textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  
+  .contact-info-big button {
+    background-color: #e50000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-self: flex-start;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-info-big button:hover {
+    background-color: #ff3333;
+  }
+  

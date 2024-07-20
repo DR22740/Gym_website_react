@@ -1,0 +1,113 @@
+.join-team {
+    padding: 50px;
+    color: #fff;
+    background: url('https://static.vecteezy.com/system/resources/previews/011/438/130/non_2x/abstract-gold-arrow-direction-on-dark-grey-metallic-circle-mesh-design-modern-luxury-futuristic-background-vector.jpg') no-repeat center center/cover;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    padding: 40px; /* Padding for some spacing */
+    border-radius: 10px; /* Rounded corners for better look */
+    animation: fadeIn 1.5s ease-in-out; /* Adding fadeIn animation */
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease-in-out; /* Adding slideInFromLeft animation */
+  }
+  
+  section {
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out; /* Adding fadeInUp animation */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out; /* Adding transition for smooth hover effect */
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #e50000; /* Change border color on focus */
+    box-shadow: 0 0 10px rgba(229, 0, 0, 0.5); /* Add shadow on focus */
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #e50000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out; /* Adding transition for smooth hover effect */
+  }
+  
+  form button:hover {
+    background-color: #ff3333;
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.5); /* Add shadow on hover */
+  }
+  
+  .position {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out; /* Adding transition for smooth hover effect */
+  }
+  
+  .position:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly change background on hover */
+    transform: translateY(-5px); /* Slightly lift the position box on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* Add shadow on hover */
+  }
+  
+  /* New styles for .btn-apply */
+  .btn-apply {
+    padding: 12px 24px;
+    background-color: #e50000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px; /* More rounded corners */
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out; /* Adding transition for smooth hover effect */
+  }
+  
+  .btn-apply:hover {
+    background-color: #ff3333;
+    
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.5); /* Add shadow on hover */
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

@@ -1,0 +1,51 @@
+.our-process {
+    padding: 50px;
+    color: #fff;
+    background: url('https://static.vecteezy.com/system/resources/previews/011/438/130/non_2x/abstract-gold-arrow-direction-on-dark-grey-metallic-circle-mesh-design-modern-luxury-futuristic-background-vector.jpg') no-repeat center center/cover;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+    padding: 20px; /* Padding for some spacing */
+    border-radius: 10px; /* Rounded corners for better look */
+  }
+  
+  .process-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: slideInFromLeft 1s ease-in-out;
+  }
+  
+  .process-step {
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .process-step h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .process-step p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

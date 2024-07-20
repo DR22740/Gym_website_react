@@ -9,7 +9,18 @@
   animation: slideIn 1s ease-in-out;
   z-index: 1000; /* Ensure the header stays above other content */
 }
+.language-toggle {
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
+.language-toggle:hover {
+  background-color: #e50000;
+}
 @keyframes slideIn {
   from {
     transform: translateY(-100%);
@@ -18,11 +29,20 @@
     transform: translateY(0);
   }
 }
-
-.logo {
+.logo a {
+  color: #fff; /* or any other color you prefer */
+  text-decoration: none;
   font-size: 2em;
-  color: #fff;
-  animation: fadeIn 1s ease-in-out;
+}
+
+.logo a:visited {
+  color: #fff; /* Ensure visited links remain the same color */
+  font-size: 2em;
+}
+
+.logo a:hover {
+  color: #e50000; /* Optional: change color on hover */
+  font-size: 2em;
 }
 
 @keyframes fadeIn {

@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import ServicesModal from './ServicesModal';
+import LanguageContext from './LanguageContext';
 
 const Header = () => {
   const [showServicesMenu, setShowServicesMenu] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, toggleLanguage, translations } = useContext(LanguageContext);
 
   const handleToggleServicesMenu = () => {
     setShowServicesMenu(!showServicesMenu);
@@ -37,29 +40,33 @@ const Header = () => {
     };
   }, []);
 
+  const t = translations[language];
+
   return (
-    <header className="header">
-      <div className="logo">FIT FOR LIFE</div>
-      <div className={`burger-menu ${isMenuOpen ? 'open' : ''}`} onClick={handleToggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
-      <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-        <a href="#intro" className={isMenuOpen ? '' : 'disabled'}>Our Process</a>
-        <a
-          href="#services"
-          className={showServicesMenu ? 'glowing' : ''}
-          onClick={handleToggleServicesMenu}
-        >
-          Services
-        </a>
-        <a href="#packages" className="disabled">Packages</a>
-        <a href="#consultation" className={isMenuOpen ? '' : 'disabled'}>Consultation</a>
-        <a href="#join" className="disabled">Join the Team</a>
-      </nav>
+    <>
+      <header className="header" role="banner">
+        <a href="#main-content" className="skip-link">Skip to main content</a>
+        <div className="logo">
+          <Link to="/Gym_website_react">{t.logo}</Link>
+        </div>
+        <div className={`burger-menu ${isMenuOpen ? 'open' : ''}`} onClick={handleToggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+        <nav className={`nav ${isMenuOpen ? 'open' : ''}`} role="navigation">
+          <Link to="/our-process" role="menuitem">{t.ourProcess}</Link>
+          <a href="#services" className={showServicesMenu ? 'glowing' : ''} role="menuitem" onClick={handleToggleServicesMenu}>{t.services}</a>
+          <Link to="/packages" role="menuitem">{t.packages}</Link>
+          <Link to="/consultation" role="menuitem">{t.consultation}</Link>
+          <Link to="/join-team" role="menuitem">{t.joinTeam}</Link>
+          <button onClick={toggleLanguage} className="language-toggle" aria-label={language === 'en' ? 'View site in Ukrainian' : 'View site in English'}>
+            {language === 'en' ? 'сайт українською мовою' : 'View in English'}
+          </button>
+        </nav>
+      </header>
       <ServicesModal show={showServicesMenu} handleClose={handleToggleServicesMenu} />
-    </header>
+    </>
   );
 };
 
