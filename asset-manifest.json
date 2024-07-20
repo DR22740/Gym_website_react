@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Gym_website_react/static/css/main.61bb3eed.css",
-    "main.js": "/Gym_website_react/static/js/main.f3a2cea7.js",
+    "main.css": "/Gym_website_react/static/css/main.d598bd2d.css",
+    "main.js": "/Gym_website_react/static/js/main.faa9be8a.js",
     "static/js/453.eb3e544c.chunk.js": "/Gym_website_react/static/js/453.eb3e544c.chunk.js",
     "static/media/creative_red_arrows_black_metal_background_4k_hd_abstract-3840x2160.jpg": "/Gym_website_react/static/media/creative_red_arrows_black_metal_background_4k_hd_abstract-3840x2160.5248493fb36d2e6c1f99.jpg",
     "index.html": "/Gym_website_react/index.html",
-    "main.61bb3eed.css.map": "/Gym_website_react/static/css/main.61bb3eed.css.map",
-    "main.f3a2cea7.js.map": "/Gym_website_react/static/js/main.f3a2cea7.js.map",
+    "main.d598bd2d.css.map": "/Gym_website_react/static/css/main.d598bd2d.css.map",
+    "main.faa9be8a.js.map": "/Gym_website_react/static/js/main.faa9be8a.js.map",
     "453.eb3e544c.chunk.js.map": "/Gym_website_react/static/js/453.eb3e544c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61bb3eed.css",
-    "static/js/main.f3a2cea7.js"
+    "static/css/main.d598bd2d.css",
+    "static/js/main.faa9be8a.js"
   ]
 }
